@@ -1,0 +1,9 @@
+<footer>
+  <p>
+  &copy; {{ .Site.Params.publicationYear }} {{ .Site.Params.Author }}.
+  Powered by <a href="https://gohugo.io/">Hugo</a>.
+  </p>
+</footer>
+{{- range .Site.Params.custom_js -}}
+<script src="{{ . }}"></script>
+{{ end }}

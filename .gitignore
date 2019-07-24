@@ -1,0 +1,10 @@
+# Jetbrains
+/.idea
+/*.iml
+
+# Hugo
+/public
+resources/
+
+# Custom
+/.dev

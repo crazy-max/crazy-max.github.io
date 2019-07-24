@@ -1,0 +1,50 @@
+baseURL: https://crazymax.dev/
+languageCode: en-us
+title: CrazyMax
+theme: pulp
+canonifyurls: true
+enableRobotsTXT: true
+
+params:
+  author: CrazyMax
+  about: Gopher and OSS Enthusiast
+  avatar: avatar.jpg
+  favicon: favicon.ico
+  description: |
+    I'm a dedicated open source software developer since 2007 and currently enjoyed building software around Golang and Docker.
+    By <a target="_blank" href="https://www.paypal.me/crazyws">supporting me</a>, you're not only sustaining one project,
+    but rather all of my main <a target="_blank" href="https://github.com/crazy-max/">open source projects</a>.
+  publicationYear: 2007-2019
+
+outputs:
+  section:
+    - JSON
+    - HTML
+
+disableKinds:
+  - sitemap
+  - taxonomy
+  - taxonomyTerm
+
+menu:
+  main:
+    - identifier: github
+      pre: <i class='fab fa-github fa-lg'></i>
+      url: https://github.com/crazy-max
+      weight: 10
+    - identifier: reddit
+      pre: <i class='fab fa-reddit-alien fa-lg'></i>
+      url: https://www.reddit.com/u/crazyymaxx
+      weight: 20
+    - identifier: twitter
+      pre: <i class='fab fa-twitter fa-lg'></i>
+      url: https://twitter.com/crazyws
+      weight: 30
+    - identifier: email
+      pre: <i class='fas fa-at fa-lg'></i>
+      url: mailto:contact@crazymax.dev
+      weight: 40
+    - identifier: paypal
+      pre: <i class='fab fa-paypal fa-lg'></i>
+      url: https://www.paypal.me/crazyws
+      weight: 50
