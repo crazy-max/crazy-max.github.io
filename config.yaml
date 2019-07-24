@@ -7,13 +7,13 @@ enableRobotsTXT: true
 
 params:
   author: CrazyMax
-  about: Gopher and OSS Enthusiast
+  about: Creating open source software
   avatar: avatar.jpg
   favicon: favicon.ico
   description: |
     I'm a dedicated open source software developer since 2007 and currently enjoyed building software around Golang and Docker.
-    By <a target="_blank" href="https://www.paypal.me/crazyws">supporting me</a>, you're not only sustaining one project,
-    but rather all of my main <a target="_blank" href="https://github.com/crazy-max/">open source projects</a>.
+    By <a target="_blank" href="https://www.patreon.com/crazymax">supporting me</a>, you're not only sustaining one project,
+    but rather all of my main <a target="_blank" href="https://github.com/crazy-max">open source projects</a>.
   publicationYear: 2007-2019
 
 outputs:
@@ -45,7 +45,11 @@ menu:
       pre: <i class='fas fa-at fa-lg'></i>
       url: mailto:contact@crazymax.dev
       weight: 40
+    - identifier: patreon
+      pre: <i class='fab fa-patreon fa-lg'></i>
+      url: https://www.patreon.com/crazymax
+      weight: 50
     - identifier: paypal
       pre: <i class='fab fa-paypal fa-lg'></i>
       url: https://www.paypal.me/crazyws
-      weight: 50
+      weight: 60
