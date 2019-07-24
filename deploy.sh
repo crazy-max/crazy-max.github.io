@@ -8,7 +8,7 @@ if [[ ! -v TRAVIS_PULL_REQUEST ]]; then
 fi
 
 # publish to master branch
-cd ./web
+cd ./public
 git init
 git config --global user.email "builds@travis-ci.com"
 git config --global user.name "Travis CI"
