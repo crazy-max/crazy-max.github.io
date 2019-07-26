@@ -7,10 +7,10 @@ enableRobotsTXT: true
 
 params:
   author: CrazyMax
-  about: Creating open source software
+  description: Creating open source software
   avatar: avatar.jpg
   favicon: favicon.ico
-  description: |
+  text: |
     I'm a dedicated open source software developer since 2007 and currently enjoyed building software around Golang and Docker.
     By <a target="_blank" href="https://www.patreon.com/crazymax">supporting me</a>, you're not only sustaining one project,
     but rather all of my main <a target="_blank" href="https://github.com/crazy-max">open source projects</a>.
