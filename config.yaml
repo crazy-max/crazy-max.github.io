@@ -4,6 +4,7 @@ title: CrazyMax
 theme: pulp
 canonifyurls: true
 enableRobotsTXT: true
+googleAnalytics: UA-12516800-8
 
 params:
   author: CrazyMax
