@@ -12,9 +12,9 @@ params:
   avatar: avatar.jpg
   favicon: favicon.ico
   text: |
-    I'm a dedicated open source software developer since 2007 and currently enjoyed building software around Golang and Docker.
+    I'm a dedicated open source software developer and currently enjoyed building software around Golang and Docker.
     By <a target="_blank" href="https://www.patreon.com/crazymax">supporting me</a>, you're not only sustaining one project,
-    but rather all of my main <a target="_blank" href="https://github.com/crazy-max">open source projects</a>.
+    but rather all of my <a target="_blank" href="https://github.com/crazy-max">open source projects</a>.
     <br />Have a question? Check out <a target="_blank" href="https://github.com/crazy-max/ama">my AMA repo</a>.
   publicationYear: 2007-2019
 
