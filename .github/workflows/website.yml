@@ -30,6 +30,6 @@ jobs:
         uses: crazy-max/ghaction-github-pages@v1
         with:
           target_branch: master
-          build_dir: web
+          build_dir: public
         env:
           GITHUB_PAT: ${{ secrets.GITHUB_PAT }}
