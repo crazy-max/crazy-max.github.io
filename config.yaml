@@ -13,9 +13,9 @@ params:
   favicon: favicon.ico
   text: |
     I'm a dedicated open source software developer and currently enjoyed building software around Golang and Docker.
-    By <a target="_blank" href="https://www.patreon.com/crazymax">supporting me</a>, you're not only sustaining one project,
+    By <a target="_blank" href="https://github.com/sponsors/crazy-max">supporting me</a>, you're not only sustaining one project,
     but rather all of my <a target="_blank" href="https://github.com/crazy-max">open source projects</a>.
-    <br />Have a question? Check out <a target="_blank" href="https://github.com/crazy-max/ama">my AMA repo</a>.
+    <br />Thanks again for your support, it is much appreciated!
   publicationYear: 2007-2019
 
 outputs:
@@ -47,9 +47,9 @@ menu:
       pre: <i class='fas fa-at fa-lg'></i>
       url: mailto:contact@crazymax.dev
       weight: 40
-    - identifier: patreon
-      pre: <i class='fab fa-patreon fa-lg'></i>
-      url: https://www.patreon.com/crazymax
+    - identifier: github-sponsors
+      pre: <i class='fab fa-github-alt fa-lg'></i>
+      url: https://github.com/sponsors/crazy-max
       weight: 50
     - identifier: paypal
       pre: <i class='fab fa-paypal fa-lg'></i>
