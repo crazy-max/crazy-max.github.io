@@ -27,9 +27,10 @@ jobs:
         # https://github.com/crazy-max/ghaction-github-pages
         name: Deploy
         if: success() && github.event_name != 'pull_request'
-        uses: crazy-max/ghaction-github-pages@v1
+        uses: crazy-max/ghaction-github-pages@master
         with:
           target_branch: master
           build_dir: public
+          keep_history: true
         env:
           GITHUB_PAT: ${{ secrets.GITHUB_PAT }}
