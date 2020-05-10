@@ -19,7 +19,7 @@ jobs:
       -
         # https://github.com/crazy-max/ghaction-hugo
         name: Hugo
-        uses: crazy-max/ghaction-hugo@master
+        uses: crazy-max/ghaction-hugo@v1
         with:
           version: latest
           args: --cleanDestinationDir --minify --verbose
