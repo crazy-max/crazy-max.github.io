@@ -16,9 +16,6 @@ jobs:
         name: Checkout
         uses: actions/checkout@v2
       -
-        name: Git config
-        run: git config --list --show-origin
-      -
         name: Hugo
         uses: crazy-max/ghaction-hugo@v1
         with:
