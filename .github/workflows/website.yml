@@ -13,18 +13,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       -
-        # https://github.com/actions/checkout
         name: Checkout
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2
       -
-        # https://github.com/crazy-max/ghaction-hugo
+        name: Git config
+        run: git config --list --show-origin
+      -
         name: Hugo
         uses: crazy-max/ghaction-hugo@v1
         with:
           version: latest
           args: --cleanDestinationDir --minify --verbose
       -
-        # https://github.com/crazy-max/ghaction-github-pages
         name: Deploy
         if: success() && github.event_name != 'pull_request'
         uses: crazy-max/ghaction-github-pages@v1
