@@ -22,6 +22,11 @@ jobs:
           version: latest
           args: --cleanDestinationDir --minify --verbose
       -
+        name: Check GitHub Pages status
+        uses: crazy-max/ghaction-github-status@v1
+        with:
+          pages_threshold: major_outage
+      -
         name: Deploy
         if: success() && github.event_name != 'pull_request'
         uses: crazy-max/ghaction-github-pages@v2
