@@ -15,11 +15,14 @@ jobs:
       -
         name: Checkout
         uses: actions/checkout@v2
+        with:
+          submodules: true
       -
         name: Hugo
         uses: crazy-max/ghaction-hugo@v1
         with:
           version: latest
+          extended: true
           args: --cleanDestinationDir --minify --verbose
       -
         name: Check GitHub Pages status

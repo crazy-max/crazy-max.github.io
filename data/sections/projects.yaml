@@ -1,0 +1,363 @@
+# section information
+section:
+  name: Projects
+  enable: true
+  weight: 4
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+buttons:
+- name: All
+  filter: "all"
+- name: Go
+  filter: "go"
+- name: Docker
+  filter: "docker"
+- name: GitHub Actions
+  filter: "github-actions"
+- name: Misc
+  filter: "misc"
+
+projects:
+- name: WindowsSpyBlocker
+  logo: images/projects/wsb.png
+  repo: crazy-max/WindowsSpyBlocker
+  summary: Block spying and tracking on Windows.
+  tags: ["go"]
+
+- name: Diun
+  logo: images/projects/diun.png
+  repo: crazy-max/diun
+  summary: Receive notifications when an image is updated on a Docker registry.
+  tags: ["go", "docker"]
+
+- name: swarm-cronjob
+  logo: images/projects/golang.png
+  repo: crazy-max/swarm-cronjob
+  summary: Create jobs on a time-based schedule on Docker Swarm.
+  tags: ["go", "docker"]
+
+- name: FTPGrab
+  logo: images/projects/ftpgrab.png
+  repo: crazy-max/ftpgrab
+  summary: Grab your files periodically from a remote FTP or SFTP server easily.
+  tags: ["go", "docker"]
+
+- name: ddns-route53
+  logo: images/projects/ddns-route53.png
+  repo: crazy-max/ddns-route53
+  summary: Dynamic DNS for Amazon Route 53 on a time-based schedule.
+  tags: ["go", "docker"]
+
+- name: Portapps
+  logo: images/projects/portapps.png
+  repo: portapps/portapps
+  summary: Collection of portable apps for Windows.
+  tags: ["go"]
+
+- name: geoip-updater
+  logo: images/projects/geoip-updater.png
+  repo: crazy-max/geoip-updater
+  summary: Download and update MaxMind's GeoIP2 databases on a time-based schedule.
+  tags: ["go", "docker"]
+
+- name: echo-ipfilter
+  logo: images/projects/echo-ipfilter.png
+  repo: crazy-max/echo-ipfilter
+  summary: Middleware that provides ipfilter support for echo framework.
+  tags: ["go"]
+
+- name: travis-wait-enhanced
+  logo: images/projects/golang.png
+  repo: crazy-max/travis-wait-enhanced
+  summary: Prevent Travis CI from thinking a long-running process has stalled.
+  tags: ["go"]
+
+- name: gonfig
+  logo: images/projects/golang.png
+  repo: crazy-max/gonfig
+  summary: Lightweight config handling for Go.
+  tags: ["go"]
+
+- name: firefox-history-merger
+  logo: images/projects/firefox-history-merger.png
+  repo: crazy-max/firefox-history-merger
+  summary: Merge Firefox history and repair missing favicons with ease.
+  tags: ["go"]
+
+- name: git-rewrite-author
+  logo: images/projects/git-rewrite-author.png
+  repo: crazy-max/git-rewrite-author
+  summary: Rewrite authors / commiters history of a git repository with ease.
+  tags: ["go"]
+
+- name: Docker Login action
+  logo: images/projects/github-actions.png
+  repo: docker/login-action
+  summary: GitHub Action to login against a Docker registry.
+  tags: ["github-actions", "docker"]
+
+- name: Docker Build and Push action
+  logo: images/projects/github-actions.png
+  repo: docker/build-push-action
+  summary: GitHub Action to build and push Docker images with Buildx.
+  tags: ["github-actions", "docker"]
+
+- name: Docker Setup Buildx action
+  logo: images/projects/github-actions.png
+  repo: docker/setup-buildx-action
+  summary: GitHub Action to set up Docker Buildx.
+  tags: ["github-actions", "docker"]
+
+- name: Docker Setup QEMU action
+  logo: images/projects/github-actions.png
+  repo: docker/setup-qemu-action
+  summary: GitHub Action to install QEMU static binaries.
+  tags: ["github-actions", "docker"]
+
+- name: GoReleaser action
+  logo: images/projects/github-actions.png
+  repo: goreleaser/goreleaser-action
+  summary: GitHub Action for GoRelease.
+  tags: ["github-actions"]
+
+- name: Mage action
+  logo: images/projects/github-actions.png
+  repo: magefile/mage-action
+  summary: GitHub Action for Mage.
+  tags: ["github-actions"]
+
+- name: Chocolatey action
+  logo: images/projects/github-actions.png
+  repo: crazy-max/ghaction-chocolatey
+  summary: GitHub Action for Chocolatey, the package manager for Windows.
+  tags: ["github-actions"]
+
+- name: Docker Buildx action
+  logo: images/projects/github-actions.png
+  repo: crazy-max/ghaction-docker-buildx
+  summary: GitHub Action to set up Docker Buildx.
+  tags: ["github-actions", "docker"]
+
+- name: Dump context action
+  logo: images/projects/github-actions.png
+  repo: crazy-max/ghaction-dump-context
+  summary: GitHub Action composite to dump context.
+  tags: ["github-actions"]
+
+- name: GitHub Labeler action
+  logo: images/projects/github-actions.png
+  repo: crazy-max/ghaction-github-labeler
+  summary: GitHub Action to manage labels on GitHub (create/rename/update/delete) as code.
+  tags: ["github-actions"]
+
+- name: GitHub Pages action
+  logo: images/projects/github-actions.png
+  repo: crazy-max/ghaction-github-pages
+  summary: GitHub Action to deploy to GitHub Pages.
+  tags: ["github-actions"]
+
+- name: GitHub Status action
+  logo: images/projects/github-actions.png
+  repo: crazy-max/ghaction-github-status
+  summary: GitHub Action to check GitHub Status in your workflow.
+  tags: ["github-actions"]
+
+- name: Hugo action
+  logo: images/projects/github-actions.png
+  repo: crazy-max/ghaction-hugo
+  summary: GitHub Action for Hugo, the world's fastest framework for building websites.
+  tags: ["github-actions"]
+
+- name: Import GPG action
+  logo: images/projects/github-actions.png
+  repo: crazy-max/ghaction-import-gpg
+  summary: GitHub Action to easily import a GPG key.
+  tags: ["github-actions"]
+
+- name: UPX action
+  logo: images/projects/github-actions.png
+  repo: crazy-max/ghaction-upx
+  summary: GitHub Action for UPX, the Ultimate Packer for eXecutables.
+  tags: ["github-actions"]
+
+- name: VirusTotal action
+  logo: images/projects/github-actions.png
+  repo: crazy-max/ghaction-virustotal
+  summary: GitHub Action to upload and scan files with VirusTotal.
+  tags: ["github-actions"]
+
+- name: Xgo action
+  logo: images/projects/github-actions.png
+  repo: crazy-max/ghaction-xgo
+  summary: GitHub Action for xgo, a Golang CGO cross compiler.
+  tags: ["github-actions"]
+
+- name: LibreNMS Docker image
+  logo: images/projects/docker.png
+  repo: librenms/docker
+  summary: LibreNMS Docker image based on Alpine Linux.
+  tags: ["docker"]
+
+- name: AnonAddy Docker image
+  logo: images/projects/docker.png
+  repo: anonaddy/docker
+  summary: AnonAddy Docker image based on Alpine Linux.
+  tags: ["docker"]
+
+- name: CSGO Server Launcher
+  logo: images/projects/csgo-server-launcher.png
+  repo: crazy-max/csgo-server-launcher
+  summary: Counter-Strike Global Offensive Dedicated Server Launcher.
+  tags: ["misc", "docker"]
+
+- name: 7zip Docker image
+  logo: images/projects/docker.png
+  repo: crazy-max/docker-7zip
+  summary: 7zip Docker image based on Alpine Linux.
+  tags: ["docker"]
+
+- name: Alpine S6 Docker image
+  logo: images/projects/docker.png
+  repo: crazy-max/docker-alpine-s6
+  summary: Alpine Linux with s6 overlay.
+  tags: ["docker"]
+
+- name: Cloudflared Docker image
+  logo: images/projects/docker.png
+  repo: crazy-max/docker-cloudflared
+  summary: Cloudflared proxy-dns Docker image based on Alpine Linux.
+  tags: ["docker"]
+
+- name: DokuWiki Docker image
+  logo: images/projects/docker.png
+  repo: crazy-max/docker-dokuwiki
+  summary: DokuWiki Docker image based on Alpine Linux.
+  tags: ["docker"]
+
+- name: EJT License Server Docker image
+  logo: images/projects/docker.png
+  repo: crazy-max/docker-ejtserver
+  summary: EJT License Server Docker image based on AdoptOpenJDK.
+  tags: ["docker"]
+
+- name: Fail2ban Docker image
+  logo: images/projects/docker.png
+  repo: crazy-max/docker-fail2ban
+  summary: Fail2ban Docker image based on Alpine Linux.
+  tags: ["docker"]
+
+- name: Firefox Sync Server Docker image
+  logo: images/projects/docker.png
+  repo: crazy-max/docker-fail2ban
+  summary: Firefox Sync Server Docker image based on Python Alpine Linux.
+  tags: ["docker"]
+
+- name: Flarum Docker image
+  logo: images/projects/docker.png
+  repo: crazy-max/docker-flarum
+  summary: Flarum Docker image based on Alpine Linux.
+  tags: ["docker"]
+
+- name: JetBrains License Server Docker image
+  logo: images/projects/docker.png
+  repo: crazy-max/docker-jetbrains-license-server
+  summary: JetBrains License Server Docker image based on AdoptOpenJDK.
+  tags: ["docker"]
+
+- name: Linguist Docker image
+  logo: images/projects/docker.png
+  repo: crazy-max/docker-linguist
+  summary: Docker image to run GitHub Linguist.
+  tags: ["docker"]
+
+- name: Loop Docker image
+  logo: images/projects/docker.png
+  repo: crazy-max/docker-loop
+  summary: Simple loop for dummy services.
+  tags: ["docker"]
+
+- name: Matomo Docker image
+  logo: images/projects/docker.png
+  repo: crazy-max/docker-matomo
+  summary: Matomo (formerly Piwik) Docker image based on Alpine Linux and Nginx.
+  tags: ["docker"]
+
+- name: MSMTPD Docker image
+  logo: images/projects/docker.png
+  repo: crazy-max/docker-flarum
+  summary: Lightweight SMTP relay using msmtpd and based on Alpine Linux.
+  tags: ["docker"]
+
+- name: Nextcloud Docker image
+  logo: images/projects/docker.png
+  repo: crazy-max/docker-nextcloud
+  summary: Nextcloud Docker image based on Alpine Linux and Nginx with advanced features.
+  tags: ["docker"]
+
+- name: Pure-FTPd Docker image
+  logo: images/projects/docker.png
+  repo: crazy-max/docker-pure-ftpd
+  summary: Pure-FTPd Docker image based on Alpine Linux with MySQL, PostgreSQL and LDAP support.
+  tags: ["docker"]
+
+- name: qBittorrent Docker image
+  logo: images/projects/docker.png
+  repo: crazy-max/docker-qbittorrent
+  summary: qBittorrent Docker image based on Alpine Linux.
+  tags: ["docker"]
+
+- name: RRDcached Docker image
+  logo: images/projects/docker.png
+  repo: crazy-max/docker-rrdcached
+  summary: RRDcached Docker image based on Alpine Linux.
+  tags: ["docker"]
+
+- name: rTorrent and ruTorrent Docker image
+  logo: images/projects/docker.png
+  repo: crazy-max/docker-rtorrent-rutorrent
+  summary: rTorrent and ruTorrent Docker image based on Alpine Linux.
+  tags: ["docker"]
+
+- name: Neard
+  logo: images/projects/neard.png
+  repo: neard/neard
+  summary: Portable WAMP software stack.
+  tags: ["misc"]
+
+- name: Login Server Enhanced
+  logo: images/projects/misc.png
+  repo: crazy-max/login-servers-enhanced
+  summary: Fork of the official login-servers Adminer plugin with enhancements.
+  tags: ["misc"]
+
+- name: DokuWiki SyntaxHighlighter 4 Plugin
+  logo: images/projects/misc.png
+  repo: crazy-max/dokuwiki-plugin-syntaxhighlighter4
+  summary: SyntaxHighlighter4 plugin for DokuWiki.
+  tags: ["misc"]
+
+- name: RocketChat Xray WebHook
+  logo: images/projects/misc.png
+  repo: crazy-max/rocketchat-xray
+  summary: JFrog Xray integration for Rocket.Chat.
+  tags: ["misc"]
+
+- name: RocketChat Uptime Robot WebHook
+  logo: images/projects/misc.png
+  repo: crazy-max/rocketchat-uptimerobot
+  summary: Uptime Robot integration for Rocket.Chat.
+  tags: ["misc"]
+
+- name: RocketChat MicroBadger WebHook
+  logo: images/projects/misc.png
+  repo: crazy-max/rocketchat-microbadger
+  summary: MicroBadger integration for Rocket.Chat.
+  tags: ["misc"]
+
+- name: RocketChat AppVeyor WebHook
+  logo: images/projects/misc.png
+  repo: crazy-max/rocketchat-appveyor
+  summary: AppVeyor integration for Rocket.Chat.
+  tags: ["misc"]

@@ -1,57 +1,50 @@
 baseURL: https://crazymax.dev/
 languageCode: en-us
 title: CrazyMax
-theme: pulp
+theme: toha
 canonifyurls: true
 enableRobotsTXT: true
 googleAnalytics: UA-12516800-8
+disqusShortname: does-not-exist
+enableEmoji: true
 
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  tableOfContents:
+    startLevel: 2
+    endLevel: 6
+    ordered: false
+
+# Custom parameters
 params:
-  author: CrazyMax
-  description: Creating open source software
-  avatar: avatar.jpg
-  favicon: favicon.ico
-  text: |
-    I'm a dedicated open source software developer and currently enjoyed building software around Golang and Docker.
-    By <a target="_blank" href="https://github.com/sponsors/crazy-max">supporting me</a>, you're not only sustaining one project,
-    but rather all of my <a target="_blank" href="https://github.com/crazy-max">open source projects</a>.
-    <br />Thanks again for your support, it is much appreciated!
-  publicationYear: 2007-2020
+  gitRepo: https://github.com/hossainemruz/toha-example-site
+  copyright: CrazyMax © 2007-2020
+  description: Creating open source software.
+  background: images/background.jpg
 
-outputs:
-  section:
-    - JSON
-    - HTML
+  logo:
+    favicon: /images/favicon.png
 
-disableKinds:
-  - RSS
-  - sitemap
-  - taxonomy
-  - taxonomyTerm
+  enableBlogPost: false
+  enableTOC: true
 
-menu:
-  main:
-    - identifier: github
-      pre: <i class='fab fa-github fa-lg'></i>
-      url: https://github.com/crazy-max
-      weight: 10
-    - identifier: reddit
-      pre: <i class='fab fa-reddit-alien fa-lg'></i>
-      url: https://www.reddit.com/u/crazyymaxx
-      weight: 20
-    - identifier: twitter
-      pre: <i class='fab fa-twitter fa-lg'></i>
-      url: https://twitter.com/crazyws
-      weight: 30
-    - identifier: email
-      pre: <i class='fas fa-at fa-lg'></i>
-      url: mailto:contact@crazymax.dev
-      weight: 40
-    - identifier: github-sponsors
-      pre: <i class='fab fa-github-alt fa-lg'></i>
-      url: https://github.com/sponsors/crazy-max
-      weight: 50
-    - identifier: paypal
-      pre: <i class='fab fa-paypal fa-lg'></i>
-      url: https://www.paypal.me/crazyws
-      weight: 60
+#  customMenus:
+#    - name: Notes
+#      url: https://hossainnotes.netlify.app/docs/example/
+
+  newsletter:
+    enable: false
+
+  author:
+    name: CrazyMax
+    nickname: CrazyMax
+    image: images/avatar.png
+    greeting: Hi, I'm
+    contactInfo:
+      email: contact@crazymax.dev
+    summary:
+      - "I'm a Software Engineer"
+      - "I'm interested in Go and Docker"
+      - "I love to work on OSS projects"

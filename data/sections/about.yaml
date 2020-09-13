@@ -1,0 +1,74 @@
+# section information
+section:
+  name: About
+  enable: true
+  weight: 1
+  showOnNavbar: true
+
+designation: Software Engineer and OSS Enthusiast
+#company:
+#  name: Example Co.
+#  url: "https://www.example.com"
+
+#resume: "files/resume.pdf"
+
+summary: |
+  I'm a Software Engineer and currently enjoyed building open source software around Golang and Docker to help others achieve their goals.
+  By <a target="_blank" href="https://github.com/sponsors/crazy-max">supporting me</a>, you're not only sustaining one project,
+  but rather all of my <a target="_blank" href="https://github.com/crazy-max">open source projects</a>.
+  Thanks again for your support, it is much appreciated!
+
+socialLinks:
+- name: GitHub
+  icon: "fab fa-github"
+  url: "https://github.com/crazy-max"
+
+- name: Reddit
+  icon: "fab fa-reddit-alien"
+  url: "https://www.reddit.com/u/crazyymaxx"
+
+- name: Twitter
+  icon: "fab fa-twitter"
+  url: "https://twitter.com/crazyws"
+
+- name: Email
+  icon: "fas fa-envelope"
+  url: "contact@crazymax.dev"
+
+- name: GitHub Sponsors
+  icon: "fab fa-github-alt"
+  url: "https://github.com/sponsors/crazy-max"
+
+- name: Paypal
+  icon: "fab fa-paypal"
+  url: "https://www.paypal.me/crazyws"
+
+# your soft skills
+# give the percentage between 50 to 100 with 5 intervals.
+# currently supported colors: blue, yellow, pink, green, sky, orange
+#softSkills:
+#- name: Leadership
+#  percentage: 85
+#  color: blue
+#- name: Team Work
+#  percentage: 90
+#  color: yellow
+#- name: Communication
+#  percentage: 85
+#  color: pink
+#- name: Hard Working
+#  percentage: 85
+#  color: green
+#- name: Fast Learner
+#  percentage: 85
+#  color: sky
+#- name: Problem Solving
+#  percentage: 85
+#  color: orange
+# you can also provide color code instead of pre-defined color name
+# - name: Example 1
+#   percentage: 75
+#   color: "#00adb5"
+# - name: Example 2
+#   percentage: 65
+#   color: "#8b8383"
