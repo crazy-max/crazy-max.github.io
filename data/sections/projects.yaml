@@ -62,6 +62,12 @@ projects:
   summary: Download and update MaxMind's GeoIP2 databases on a time-based schedule.
   tags: ["go", "docker"]
 
+- name: Artifactory Cleanup
+  logo: images/projects/artifactory-cleanup.png
+  repo: crazy-max/artifactory-cleanup
+  summary: Perform artifacts cleanup operations with advanced settings on JFrog Artifactory.
+  tags: ["go", "docker"]
+
 - name: echo-ipfilter
   logo: images/projects/echo-ipfilter.png
   repo: crazy-max/echo-ipfilter
@@ -132,6 +138,12 @@ projects:
   logo: images/projects/github-actions.png
   repo: crazy-max/ghaction-chocolatey
   summary: GitHub Action for Chocolatey, the package manager for Windows.
+  tags: ["github-actions"]
+
+- name: containerd action
+  logo: images/projects/github-actions.png
+  repo: crazy-max/ghaction-setup-containerd
+  summary: GitHub Action to set up containerd.
   tags: ["github-actions"]
 
 - name: Docker Buildx action
