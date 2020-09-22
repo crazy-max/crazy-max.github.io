@@ -33,7 +33,7 @@ projects:
   tags: ["go", "docker"]
 
 - name: swarm-cronjob
-  logo: images/projects/golang.png
+  logo: images/projects/swarm-cronjob.png
   repo: crazy-max/swarm-cronjob
   summary: Create jobs on a time-based schedule on Docker Swarm.
   tags: ["go", "docker"]
