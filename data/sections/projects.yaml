@@ -262,7 +262,7 @@ projects:
 
 - name: Firefox Sync Server Docker image
   logo: images/projects/docker.png
-  repo: crazy-max/docker-fail2ban
+  repo: crazy-max/docker-firefox-syncserver
   summary: Firefox Sync Server Docker image based on Python Alpine Linux.
   tags: ["docker"]
 
@@ -298,7 +298,7 @@ projects:
 
 - name: MSMTPD Docker image
   logo: images/projects/docker.png
-  repo: crazy-max/docker-flarum
+  repo: crazy-max/docker-msmtpd
   summary: Lightweight SMTP relay using msmtpd and based on Alpine Linux.
   tags: ["docker"]
 
