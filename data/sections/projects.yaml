@@ -158,6 +158,12 @@ projects:
   summary: GitHub Action to set up Docker Buildx.
   tags: ["github-actions", "docker"]
 
+- name: Docker Meta action
+  logo: images/projects/github-actions.png
+  repo: crazy-max/ghaction-docker-meta
+  summary: GitHub Action to extract metadata (tags, labels) for Docker.
+  tags: ["github-actions", "docker"]
+
 - name: Dump context action
   logo: images/projects/github-actions.png
   repo: crazy-max/ghaction-dump-context
