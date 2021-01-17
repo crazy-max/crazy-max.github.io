@@ -182,6 +182,12 @@ projects:
   summary: GitHub Action to deploy to GitHub Pages.
   tags: ["github-actions"]
 
+- name: GitHub Runtime action
+  logo: images/projects/github-actions.png
+  repo: crazy-max/ghaction-github-runtime
+  summary: GitHub Action to expose GitHub runtime to the workflow.
+  tags: ["github-actions"]
+
 - name: GitHub Status action
   logo: images/projects/github-actions.png
   repo: crazy-max/ghaction-github-status
@@ -252,6 +258,12 @@ projects:
   logo: images/projects/docker.png
   repo: crazy-max/docker-cloudflared
   summary: Cloudflared proxy-dns Docker image based on Alpine Linux.
+  tags: ["docker"]
+
+- name: Docker in Docker (DinD) image
+  logo: images/projects/docker.png
+  repo: crazy-max/docker-docker
+  summary: Docker in Docker (DinD) image inspired by the official Docker image.
   tags: ["docker"]
 
 - name: DokuWiki Docker image
@@ -348,6 +360,12 @@ projects:
   logo: images/projects/docker.png
   repo: crazy-max/docker-rtorrent-rutorrent
   summary: rTorrent and ruTorrent Docker image based on Alpine Linux.
+  tags: ["docker"]
+
+- name: Unbound Docker image
+  logo: images/projects/docker.png
+  repo: crazy-max/docker-unbound
+  summary: Docker image for Unbound, a validating, recursive, and caching DNS resolver.
   tags: ["docker"]
 
 - name: Neard

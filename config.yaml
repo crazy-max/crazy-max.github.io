@@ -20,7 +20,7 @@ markup:
 # Custom parameters
 params:
   gitRepo: https://github.com/hossainemruz/toha-example-site
-  copyright: CrazyMax © 2007-2020
+  copyright: CrazyMax © 2007-2021
   description: Creating open source software.
   background: images/background.jpg
 
