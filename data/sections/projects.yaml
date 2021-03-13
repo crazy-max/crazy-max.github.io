@@ -104,6 +104,24 @@ projects:
   summary: Rewrite authors / commiters history of a git repository with ease.
   tags: ["go"]
 
+- name: goreleaser-xx
+  logo: images/projects/goreleaser-xx.png
+  repo: crazy-max/goreleaser-xx
+  summary: Cross compilation helper for GoReleaser.
+  tags: ["go", "docker"]
+
+- name: xgo
+  logo: images/projects/golang.png
+  repo: crazy-max/xgo
+  summary: Go CGO cross compiler.
+  tags: ["go", "docker"]
+
+- name: yasu
+  logo: images/projects/golang.png
+  repo: crazy-max/yasu
+  summary: Yet Another Switch User.
+  tags: ["go", "docker"]
+
 - name: Docker Login action
   logo: images/projects/github-actions.png
   repo: docker/login-action
@@ -162,6 +180,12 @@ projects:
   logo: images/projects/github-actions.png
   repo: crazy-max/ghaction-docker-meta
   summary: GitHub Action to extract metadata (tags, labels) for Docker.
+  tags: ["github-actions", "docker"]
+
+- name: Docker Status action
+  logo: images/projects/github-actions.png
+  repo: crazy-max/ghaction-docker-status
+  summary: GitHub Action to check Docker system status in your workflow.
   tags: ["github-actions", "docker"]
 
 - name: Dump context action
@@ -360,6 +384,12 @@ projects:
   logo: images/projects/docker.png
   repo: crazy-max/docker-rtorrent-rutorrent
   summary: rTorrent and ruTorrent Docker image based on Alpine Linux.
+  tags: ["docker"]
+
+- name: Shodan Docker image
+  logo: images/projects/docker.png
+  repo: crazy-max/docker-shodan
+  summary: Shodan Docker image based on Alpine Linux.
   tags: ["docker"]
 
 - name: Unbound Docker image
