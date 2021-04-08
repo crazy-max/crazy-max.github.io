@@ -23,10 +23,6 @@ socialLinks:
   icon: "fab fa-github"
   url: "https://github.com/crazy-max"
 
-- name: Reddit
-  icon: "fab fa-reddit-alien"
-  url: "https://www.reddit.com/u/crazyymaxx"
-
 - name: Twitter
   icon: "fab fa-twitter"
   url: "https://twitter.com/crazyws"
