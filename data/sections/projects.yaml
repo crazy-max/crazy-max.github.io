@@ -140,6 +140,12 @@ projects:
   summary: GitHub Action to build with Buildx Bake.
   tags: ["github-actions", "docker"]
 
+- name: Docker Metadata action
+  logo: images/projects/github-actions.png
+  repo: docker/metadata-action
+  summary: GitHub Action to extract metadata (tags, labels) for Docker.
+  tags: ["github-actions", "docker"]
+
 - name: Docker Setup Buildx action
   logo: images/projects/github-actions.png
   repo: docker/setup-buildx-action
@@ -175,12 +181,6 @@ projects:
   repo: crazy-max/ghaction-setup-containerd
   summary: GitHub Action to set up containerd.
   tags: ["github-actions"]
-
-- name: Docker Meta action
-  logo: images/projects/github-actions.png
-  repo: crazy-max/ghaction-docker-meta
-  summary: GitHub Action to extract metadata (tags, labels) for Docker.
-  tags: ["github-actions", "docker"]
 
 - name: Docker Status action
   logo: images/projects/github-actions.png
