@@ -122,6 +122,12 @@ projects:
   summary: Yet Another Switch User.
   tags: ["go", "docker"]
 
+- name: Dagger action
+  logo: images/projects/github-actions.png
+  repo: dagger/dagger-action
+  summary: GitHub Action for Dagger.
+  tags: ["github-actions", "docker"]
+
 - name: Docker Login action
   logo: images/projects/github-actions.png
   repo: docker/login-action
