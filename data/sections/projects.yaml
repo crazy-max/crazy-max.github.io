@@ -386,6 +386,12 @@ projects:
   summary: rTorrent and ruTorrent Docker image based on Alpine Linux.
   tags: ["docker"]
 
+- name: Samba Docker image
+  logo: images/projects/docker.png
+  repo: crazy-max/docker-samba
+  summary: Samba Docker image based on Alpine Linux.
+  tags: ["docker"]
+
 - name: Shodan Docker image
   logo: images/projects/docker.png
   repo: crazy-max/docker-shodan
