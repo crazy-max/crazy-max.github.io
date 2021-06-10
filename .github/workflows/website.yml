@@ -15,8 +15,11 @@ jobs:
       -
         name: Checkout
         uses: actions/checkout@v2
+      -
+        name: Set up Go
+        uses: actions/setup-go@v2
         with:
-          submodules: true
+          go-version: 1.16
       -
         name: Hugo
         uses: crazy-max/ghaction-hugo@v1

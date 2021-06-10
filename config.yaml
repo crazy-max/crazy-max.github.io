@@ -1,12 +1,18 @@
 baseURL: https://crazymax.dev/
 languageCode: en-us
 title: CrazyMax
-theme: toha
 canonifyurls: true
 enableRobotsTXT: true
 googleAnalytics: UA-12516800-8
 disqusShortname: does-not-exist
 enableEmoji: true
+
+module:
+  imports:
+    - path: github.com/hugo-toha/toha
+
+theme:
+  - toha
 
 markup:
   goldmark:
@@ -16,35 +22,3 @@ markup:
     startLevel: 2
     endLevel: 6
     ordered: false
-
-# Custom parameters
-params:
-  gitRepo: https://github.com/hossainemruz/toha-example-site
-  copyright: CrazyMax © 2007-2021
-  description: Creating open source software.
-  background: images/background.jpg
-
-  logo:
-    favicon: /images/favicon.png
-
-  enableBlogPost: false
-  enableTOC: true
-
-#  customMenus:
-#    - name: Notes
-#      url: https://hossainnotes.netlify.app/docs/example/
-
-  newsletter:
-    enable: false
-
-  author:
-    name: CrazyMax
-    nickname: CrazyMax
-    image: images/avatar.png
-    greeting: Hi, I'm
-    contactInfo:
-      email: contact@crazymax.dev
-    summary:
-      - "I'm a Software Engineer"
-      - "I'm interested in Go and Docker"
-      - "I love to work on OSS projects"
