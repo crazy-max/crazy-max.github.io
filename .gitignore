@@ -3,8 +3,9 @@
 /*.iml
 
 # Hugo
+/_vendor
 /public
-resources/
+/resources
 
 # Custom
 /.dev

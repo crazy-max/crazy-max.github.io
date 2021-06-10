@@ -10,9 +10,11 @@ enableEmoji: true
 module:
   imports:
     - path: github.com/hugo-toha/toha
+    - path: github.com/divinerites/plausible-hugo
 
 theme:
   - toha
+  - plausible-hugo
 
 markup:
   goldmark:
@@ -22,3 +24,40 @@ markup:
     startLevel: 2
     endLevel: 6
     ordered: false
+
+params:
+  gitRepo: https://github.com/crazy-max/crazy-max.github.io
+  copyright: CrazyMax © 2007-2021
+  description: Creating open source software.
+  background: images/background.jpg
+
+  logo:
+    favicon: /images/favicon.png
+
+  enableBlogPost: false
+  enableTOC: true
+
+  #  customMenus:
+  #    - name: Notes
+  #      url: https://hossainnotes.netlify.app/docs/example/
+
+  newsletter:
+    enable: false
+
+  author:
+    name: CrazyMax
+    nickname: CrazyMax
+    image: images/avatar.png
+    greeting: Hi, I'm
+    contactInfo:
+      email: contact@crazymax.dev
+    summary:
+      - "I'm a Software Engineer"
+      - "I'm interested in Go and Docker"
+      - "I love to work on OSS projects"
+
+  plausible:
+    enable: true
+    domain: crazymax.dev
+    selfhosted_domain: plausible.re4per.com
+    outbound_link: true
