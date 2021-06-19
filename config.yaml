@@ -53,7 +53,7 @@ params:
     summary:
       - "I'm a Software Engineer"
       - "I'm interested in Go and Docker"
-      - "I love to work on OSS projects"
+      - "I enjoy working on OSS projects"
 
   plausible:
     enable: true

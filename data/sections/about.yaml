@@ -27,10 +27,6 @@ socialLinks:
   icon: "fab fa-twitter"
   url: "https://twitter.com/crazyws"
 
-- name: Email
-  icon: "fas fa-envelope"
-  url: "contact@crazymax.dev"
-
 - name: GitHub Sponsors
   icon: "fab fa-github-alt"
   url: "https://github.com/sponsors/crazy-max"
