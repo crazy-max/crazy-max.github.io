@@ -48,8 +48,6 @@ params:
     nickname: CrazyMax
     image: images/avatar.png
     greeting: Hi, I'm
-    contactInfo:
-      email: contact@crazymax.dev
     summary:
       - "I'm a Software Engineer"
       - "I'm interested in Go and Docker"

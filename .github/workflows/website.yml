@@ -17,17 +17,10 @@ jobs:
         name: Checkout
         uses: actions/checkout@v2
       -
-        name: Set up Go
-        uses: actions/setup-go@v2
+        name: Build
+        uses: docker/bake-action@v1
         with:
-          go-version: 1.16
-      -
-        name: Hugo
-        uses: crazy-max/ghaction-hugo@v1
-        with:
-          version: latest
-          extended: true
-          args: --cleanDestinationDir --minify --verbose
+          targets: build
       -
         name: Check GitHub Pages status
         uses: crazy-max/ghaction-github-status@v2
