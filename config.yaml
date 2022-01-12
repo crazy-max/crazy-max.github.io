@@ -26,7 +26,7 @@ markup:
 
 params:
   gitRepo: https://github.com/crazy-max/crazy-max.github.io
-  copyright: CrazyMax © 2007-2021
+  copyright: CrazyMax © 2007-2022
   description: Creating open source software.
   background: images/background.jpg
 
