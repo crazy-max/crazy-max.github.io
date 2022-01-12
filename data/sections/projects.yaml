@@ -110,6 +110,12 @@ projects:
   summary: Cross compilation helper for GoReleaser.
   tags: ["go", "docker"]
 
+- name: goxx
+  logo: images/projects/golang.png
+  repo: crazy-max/goxx
+  summary: Go CGO cross-compiler Docker image.
+  tags: ["go", "docker"]
+
 - name: xgo
   logo: images/projects/golang.png
   repo: crazy-max/xgo
@@ -187,6 +193,12 @@ projects:
   repo: crazy-max/ghaction-setup-containerd
   summary: GitHub Action to set up containerd.
   tags: ["github-actions"]
+
+- name: Container scan action
+  logo: images/projects/github-actions.png
+  repo: crazy-max/ghaction-container-scan
+  summary: GitHub Action to check for vulnerabilities in your container image.
+  tags: ["github-actions", "docker"]
 
 - name: Docker Status action
   logo: images/projects/github-actions.png
@@ -366,6 +378,12 @@ projects:
   logo: images/projects/docker.png
   repo: crazy-max/docker-nextcloud
   summary: Nextcloud Docker image based on Alpine Linux and Nginx with advanced features.
+  tags: ["docker"]
+
+- name: OSX cross Docker image
+  logo: images/projects/docker.png
+  repo: crazy-max/docker-osxcross
+  summary: MacOSX cross toolchain as Docker image.
   tags: ["docker"]
 
 - name: Pure-FTPd Docker image
