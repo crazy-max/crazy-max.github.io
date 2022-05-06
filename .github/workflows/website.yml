@@ -18,7 +18,7 @@ jobs:
         uses: actions/checkout@v2
       -
         name: Build
-        uses: docker/bake-action@v1
+        uses: docker/bake-action@v2
         with:
           targets: build
       -
