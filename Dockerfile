@@ -1,4 +1,4 @@
-# syntax=docker/dockerfile:1.2
+# syntax=docker/dockerfile:1
 
 ARG ALPINE_VERSION="3.14"
 ARG HUGO_VERSION
