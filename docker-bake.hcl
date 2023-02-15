@@ -1,9 +1,9 @@
 variable "HUGO_VERSION" {
-  default = "0.83.1"
+  default = null
 }
 
 variable "GO_VERSION" {
-  default = "1.16"
+  default = null
 }
 
 group "default" {

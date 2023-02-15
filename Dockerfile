@@ -1,8 +1,8 @@
 # syntax=docker/dockerfile:1
 
 ARG ALPINE_VERSION="3.17"
-ARG HUGO_VERSION
-ARG GO_VERSION
+ARG HUGO_VERSION="0.83.1"
+ARG GO_VERSION="1.16"
 
 FROM alpine:${ALPINE_VERSION} AS hugo
 WORKDIR /usr/bin
