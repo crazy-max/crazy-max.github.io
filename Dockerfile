@@ -1,7 +1,7 @@
 # syntax=docker/dockerfile:1
 
 ARG ALPINE_VERSION="3.17"
-ARG HUGO_VERSION="0.83.1"
+ARG HUGO_VERSION="0.110.0"
 ARG GO_VERSION="1.20"
 
 FROM alpine:${ALPINE_VERSION} AS hugo
