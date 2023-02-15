@@ -1,11 +1,2 @@
-# Jetbrains
-/.idea
-/*.iml
-
-# Hugo
-/_vendor
 /public
 /resources
-
-# Custom
-/.dev

@@ -1,21 +1,41 @@
 variable "HUGO_VERSION" {
-  default = "0.83.1"
+  default = null
 }
 
 variable "GO_VERSION" {
-  default = "1.16"
+  default = null
+}
+
+target "_common" {
+  args = {
+    GO_VERSION = GO_VERSION
+    HUGO_VERSION = HUGO_VERSION
+  }
 }
 
 group "default" {
   targets = ["build"]
 }
 
+group "validate" {
+  targets = ["validate-vendor"]
+}
+
+target "validate-vendor" {
+  inherits = ["_common"]
+  target = "vendor-validate"
+  output = ["type=cacheonly"]
+}
+
 target "build" {
-  args = {
-    GO_VERSION = GO_VERSION
-    HUGO_VERSION = HUGO_VERSION
-  }
+  inherits = ["_common"]
   dockerfile = "./Dockerfile"
   target = "build-update"
+  output = ["."]
+}
+
+target "vendor" {
+  inherits = ["_common"]
+  target = "vendor-update"
   output = ["."]
 }
