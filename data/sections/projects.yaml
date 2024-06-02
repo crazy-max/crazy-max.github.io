@@ -20,12 +20,6 @@ buttons:
   filter: "misc"
 
 projects:
-- name: WindowsSpyBlocker
-  logo: images/projects/wsb.png
-  repo: crazy-max/WindowsSpyBlocker
-  summary: Block spying and tracking on Windows.
-  tags: ["go"]
-
 - name: Diun
   logo: images/projects/diun.png
   repo: crazy-max/diun
@@ -36,12 +30,6 @@ projects:
   logo: images/projects/swarm-cronjob.png
   repo: crazy-max/swarm-cronjob
   summary: Create jobs on a time-based schedule on Docker Swarm.
-  tags: ["go", "docker"]
-
-- name: FTPGrab
-  logo: images/projects/ftpgrab.png
-  repo: crazy-max/ftpgrab
-  summary: Grab your files periodically from a remote FTP or SFTP server easily.
   tags: ["go", "docker"]
 
 - name: ddns-route53
@@ -56,6 +44,12 @@ projects:
   summary: Extract contents of a container image in a local folder.
   tags: ["go", "docker"]
 
+- name: FTPGrab
+  logo: images/projects/ftpgrab.png
+  repo: crazy-max/ftpgrab
+  summary: Grab your files periodically from a remote FTP or SFTP server easily.
+  tags: ["go", "docker"]
+
 - name: Portapps
   logo: images/projects/portapps.png
   repo: portapps/portapps
@@ -68,22 +62,10 @@ projects:
   summary: Download and update MaxMind's GeoIP2 databases on a time-based schedule.
   tags: ["go", "docker"]
 
-- name: Artifactory Cleanup
-  logo: images/projects/artifactory-cleanup.png
-  repo: crazy-max/artifactory-cleanup
-  summary: Perform artifacts cleanup operations with advanced settings on JFrog Artifactory.
-  tags: ["go", "docker"]
-
 - name: echo-ipfilter
   logo: images/projects/echo-ipfilter.png
   repo: crazy-max/echo-ipfilter
   summary: Middleware that provides ipfilter support for echo framework.
-  tags: ["go"]
-
-- name: travis-wait-enhanced
-  logo: images/projects/golang.png
-  repo: crazy-max/travis-wait-enhanced
-  summary: Prevent Travis CI from thinking a long-running process has stalled.
   tags: ["go"]
 
 - name: gonfig
@@ -92,29 +74,23 @@ projects:
   summary: Lightweight config handling for Go.
   tags: ["go"]
 
+- name: gotestlist
+  logo: images/projects/golang.png
+  repo: crazy-max/gotestlist
+  summary: List tests in the given Go packages.
+  tags: ["go"]
+
 - name: gohealthchecks
   logo: images/projects/golang.png
   repo: crazy-max/gohealthchecks
   summary: Go client library for accessing the Healthchecks API.
   tags: ["go"]
 
-- name: firefox-history-merger
-  logo: images/projects/firefox-history-merger.png
-  repo: crazy-max/firefox-history-merger
-  summary: Merge Firefox history and repair missing favicons with ease.
+- name: xcalxls2csv
+  logo: images/projects/golang.png
+  repo: crazy-max/gohealthchecks
+  summary: Xcalibur XLS data frames to CSV.
   tags: ["go"]
-
-- name: git-rewrite-author
-  logo: images/projects/git-rewrite-author.png
-  repo: crazy-max/git-rewrite-author
-  summary: Rewrite authors / commiters history of a git repository with ease.
-  tags: ["go"]
-
-- name: goreleaser-xx
-  logo: images/projects/goreleaser-xx.png
-  repo: crazy-max/goreleaser-xx
-  summary: Cross compilation helper for GoReleaser.
-  tags: ["go", "docker"]
 
 - name: goxx
   logo: images/projects/golang.png
@@ -132,6 +108,42 @@ projects:
   logo: images/projects/golang.png
   repo: crazy-max/yasu
   summary: Yet Another Switch User.
+  tags: ["go", "docker"]
+
+- name: WindowsSpyBlocker
+  logo: images/projects/wsb.png
+  repo: crazy-max/WindowsSpyBlocker
+  summary: Block spying and tracking on Windows.
+  tags: ["go"]
+
+- name: firefox-history-merger
+  logo: images/projects/firefox-history-merger.png
+  repo: crazy-max/firefox-history-merger
+  summary: Merge Firefox history and repair missing favicons with ease.
+  tags: ["go"]
+
+- name: goreleaser-xx
+  logo: images/projects/goreleaser-xx.png
+  repo: crazy-max/goreleaser-xx
+  summary: Cross compilation helper for GoReleaser.
+  tags: ["go", "docker"]
+
+- name: git-rewrite-author
+  logo: images/projects/git-rewrite-author.png
+  repo: crazy-max/git-rewrite-author
+  summary: Rewrite authors / commiters history of a git repository with ease.
+  tags: ["go"]
+
+- name: travis-wait-enhanced
+  logo: images/projects/golang.png
+  repo: crazy-max/travis-wait-enhanced
+  summary: Prevent Travis CI from thinking a long-running process has stalled.
+  tags: ["go"]
+
+- name: Artifactory Cleanup
+  logo: images/projects/artifactory-cleanup.png
+  repo: crazy-max/artifactory-cleanup
+  summary: Perform artifacts cleanup operations with advanced settings on JFrog Artifactory.
   tags: ["go", "docker"]
 
 - name: Dagger action
@@ -332,16 +344,16 @@ projects:
   summary: Fail2ban Docker image based on Alpine Linux.
   tags: ["docker"]
 
-- name: Firefox Sync Server Docker image
-  logo: images/projects/docker.png
-  repo: crazy-max/docker-firefox-syncserver
-  summary: Firefox Sync Server Docker image based on Python Alpine Linux.
-  tags: ["docker"]
-
 - name: Flarum Docker image
   logo: images/projects/docker.png
   repo: crazy-max/docker-flarum
   summary: Flarum Docker image based on Alpine Linux.
+  tags: ["docker"]
+
+- name: Spliit Docker image
+  logo: images/projects/docker.png
+  repo: crazy-max/docker-fail2ban
+  summary: Spliit Docker image based on Alpine Linux.
   tags: ["docker"]
 
 - name: Healthchecks Docker image
@@ -360,12 +372,6 @@ projects:
   logo: images/projects/docker.png
   repo: crazy-max/docker-linguist
   summary: Docker image to run GitHub Linguist.
-  tags: ["docker"]
-
-- name: Loop Docker image
-  logo: images/projects/docker.png
-  repo: crazy-max/docker-loop
-  summary: Simple loop for dummy services.
   tags: ["docker"]
 
 - name: Matomo Docker image
@@ -422,16 +428,28 @@ projects:
   summary: Samba Docker image based on Alpine Linux.
   tags: ["docker"]
 
-- name: Shodan Docker image
-  logo: images/projects/docker.png
-  repo: crazy-max/docker-shodan
-  summary: Shodan Docker image based on Alpine Linux.
-  tags: ["docker"]
-
 - name: Unbound Docker image
   logo: images/projects/docker.png
   repo: crazy-max/docker-unbound
   summary: Docker image for Unbound, a validating, recursive, and caching DNS resolver.
+  tags: ["docker"]
+
+- name: Firefox Sync Server Docker image
+  logo: images/projects/docker.png
+  repo: crazy-max/docker-firefox-syncserver
+  summary: Firefox Sync Server Docker image based on Python Alpine Linux.
+  tags: ["docker"]
+
+- name: Loop Docker image
+  logo: images/projects/docker.png
+  repo: crazy-max/docker-loop
+  summary: Simple loop for dummy services.
+  tags: ["docker"]
+
+- name: Shodan Docker image
+  logo: images/projects/docker.png
+  repo: crazy-max/docker-shodan
+  summary: Shodan Docker image based on Alpine Linux.
   tags: ["docker"]
 
 - name: Neard
