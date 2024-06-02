@@ -88,7 +88,7 @@ projects:
 
 - name: xcalxls2csv
   logo: images/projects/golang.png
-  repo: crazy-max/gohealthchecks
+  repo: crazy-max/xcalxls2csv
   summary: Xcalibur XLS data frames to CSV.
   tags: ["go"]
 
@@ -352,7 +352,7 @@ projects:
 
 - name: Spliit Docker image
   logo: images/projects/docker.png
-  repo: crazy-max/docker-fail2ban
+  repo: crazy-max/docker-spliit
   summary: Spliit Docker image based on Alpine Linux.
   tags: ["docker"]
 
