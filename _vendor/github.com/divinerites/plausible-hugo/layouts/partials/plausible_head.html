@@ -13,16 +13,26 @@
 {{- end }}
 {{- $pio_domain_real := $pio_domain }}
 <!-- Compute the SCRIPT name -->
-{{- $pio_script := "plausible"}}
+{{- $pio_script := "script"}}
 {{- if site.Params.plausible.selfhosted_domain }}
-    {{- $pio_script = "plausible"}}
+    {{- $pio_script = "script"}}
 {{- else if site.Params.plausible.custom_js_domain }}
     {{- $pio_script = "index"}}
+{{- end }}
+<!-- manage FILE DOWNLOADS if set -->
+{{- $downloads := "" }}
+{{- if site.Params.plausible.file_downloads }}
+    {{- $downloads = ".file-downloads" }}
 {{- end }}
 <!-- manage OUTBOUND LINKS if set -->
 {{- $outbound := "" }}
 {{- if site.Params.plausible.outbound_link }}
     {{- $outbound = ".outbound-links" }}
+{{- end }}
+<!-- manage hash-based routing if set -->
+{{- $hash := "" }}
+{{- if site.Params.plausible.hash_based_routing }}
+{{- $hash = ".hash" }}
 {{- end }}
 <!-- Manage proxing for Netlify -->
 {{- if site.Params.plausible.proxy_netlify }}
@@ -34,7 +44,7 @@
     {{- $pio_js = "/misc/js/"}}
     {{- $pio_data_api = "/misc/api/event"}}
 {{- end }}
-{{- $pio_script = printf "%s%s" $pio_script $outbound }}
+{{- $pio_script = printf "%s%s%s%s" $pio_script $downloads $outbound $hash }}
 
 <!-- Active plausible : if option is "on" and for allowed pages -->
 {{- if and (site.Params.plausible.enable) (not .Params.plausible_do_not_track) }}
@@ -44,12 +54,24 @@
         <link rel="preconnect" href="https://{{ $pio_domain }}">
     {{- end }}
     <!-- Add SCRIPT DIRECTIVES -->
-    {{- if and (site.IsServer) (not site.Params.plausible.debug) -}}
-        <!-- To avoid stats bloat when in dev/server & not debug mode -->
-        {{- printf "<!-- Dev mode : We do not load plausible script to avoid bloating your stats -->" | safeHTML }}
+    {{- if lt hugo.Version "0.120.0" }}
+        <!-- Old Hugo versions -->
+        {{- if and (site.IsServer) (not site.Params.plausible.debug) -}}
+            <!-- To avoid stats bloat when in dev/server & not debug mode -->
+            {{- printf "<!-- Dev mode : We do not load plausible script to avoid bloating your stats -->" | safeHTML }}
+        {{- else }}
+            <!-- In production or in debug mode, we need plausible to fully operate -->
+            <script defer {{if site.Params.plausible.file_downloads_types }}file-types="{{ site.Params.plausible.file_downloads_types }}"{{ end }} data-domain="{{ site.Params.plausible.domain }}" src="{{ $pio_http }}{{ $pio_domain }}{{ $pio_js }}{{ $pio_script }}.js" {{if site.Params.plausible.proxy_netlify }}data-api="{{ $pio_data_api }}"{{ end }}></script>
+        {{- end }}
     {{- else }}
-        <!-- In production or in debug mode, we need plausible to fully operate -->
-        <script defer data-domain="{{ site.Params.plausible.domain }}" src="{{ $pio_http }}{{ $pio_domain }}{{ $pio_js }}{{ $pio_script }}.js" {{if site.Params.plausible.proxy_netlify }}data-api="{{ $pio_data_api }}"{{ end }}></script>
+        <!-- Recent Hugo versions -->
+        {{- if and (hugo.IsServer) (not site.Params.plausible.debug) -}}
+            <!-- To avoid stats bloat when in dev/server & not debug mode -->
+            {{- printf "<!-- Dev mode : We do not load plausible script to avoid bloating your stats -->" | safeHTML }}
+        {{- else }}
+            <!-- In production or in debug mode, we need plausible to fully operate -->
+            <script defer {{if site.Params.plausible.file_downloads_types }}file-types="{{ site.Params.plausible.file_downloads_types }}"{{ end }} data-domain="{{ site.Params.plausible.domain }}" src="{{ $pio_http }}{{ $pio_domain }}{{ $pio_js }}{{ $pio_script }}.js" {{if site.Params.plausible.proxy_netlify }}data-api="{{ $pio_data_api }}"{{ end }}></script>
+        {{- end }}
     {{- end }}
 
     {{- partialCached "plausible_head_csp.html" (dict "context" . "domain" $pio_domain "script" $pio_script ) }}

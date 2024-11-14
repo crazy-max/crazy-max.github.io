@@ -58,3 +58,5 @@ params:
     domain: crazymax.dev
     selfhosted_domain: plausible.re4per.com
     outbound_link: true
+    gitstar: false
+    public_dashboard: false

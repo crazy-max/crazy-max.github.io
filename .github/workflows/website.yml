@@ -30,7 +30,7 @@ jobs:
           pages_threshold: major_outage
       -
         name: Deploy
-        if: success() && github.event_name != 'pull_request'
+        if: github.event_name != 'pull_request'
         uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: master
