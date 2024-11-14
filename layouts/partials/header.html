@@ -2,7 +2,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-{{ partial "plausible_head.html" . }}
+{{ if .Site.Params.plausible.enable }}
+<link rel="preconnect" href="https://{{ .Site.Params.plausible.host }}">
+<script defer data-domain="{{ .Site.Params.plausible.domain }}" src="https://{{ .Site.Params.plausible.host }}/js/plausible.outbound-links.js" ></script>
+<script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+{{ end }}
 
 <!-- ============ import common css ========== -->
 <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
