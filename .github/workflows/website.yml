@@ -22,6 +22,7 @@ jobs:
         name: Build
         uses: docker/bake-action@v6
         with:
+          source: .
           targets: build
       -
         name: Check GitHub Pages status
