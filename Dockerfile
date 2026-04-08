@@ -1,18 +1,19 @@
 # syntax=docker/dockerfile:1
 
-ARG ALPINE_VERSION="3.17"
-ARG HUGO_VERSION="0.110.0"
-ARG GO_VERSION="1.20"
+ARG ALPINE_VERSION="3.23"
+ARG HUGO_VERSION="0.154.5"
+ARG GO_VERSION="1.26"
 
 FROM alpine:${ALPINE_VERSION} AS hugo
-WORKDIR /usr/bin
+ARG TARGETARCH
 ARG HUGO_VERSION
-RUN wget -qO- "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_Linux-64bit.tar.gz" | tar -zxvf - hugo \
-  && hugo version
+WORKDIR /out
+ADD https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-${TARGETARCH}.tar.gz .
+RUN tar xvf hugo_extended_${HUGO_VERSION}_linux-${TARGETARCH}.tar.gz
 
 FROM golang:${GO_VERSION}-alpine AS base
-COPY --from=hugo /usr/bin/hugo /usr/bin/hugo
-RUN apk add --no-cache coreutils file git rsync
+COPY --from=hugo /out/hugo /usr/bin/hugo
+RUN apk add --no-cache coreutils file gcompat git nodejs npm rsync
 WORKDIR /src
 
 FROM base AS vendored
@@ -45,11 +46,16 @@ RUN --mount=target=/context \
   fi
 EOT
 
+FROM base AS dev
+WORKDIR /src
+COPY --from=hugo /out/hugo /usr/bin/hugo
+COPY . .
+
 FROM base AS build
 RUN --mount=type=bind,target=.,rw \
   --mount=type=cache,target=/go/pkg/mod \
   --mount=type=cache,target=/tmp/.hugo \
-  hugo --cacheDir /tmp/.hugo --destination /out --verbose
+  hugo --cacheDir /tmp/.hugo --destination /out --logLevel info
 
 FROM scratch AS build-update
 COPY --from=build /out /public

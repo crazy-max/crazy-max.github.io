@@ -1,0 +1,77 @@
+baseURL: https://crazymax.dev/
+languageCode: en-us
+defaultContentLanguage: en
+title: CrazyMax
+canonifyURLs: true
+enableRobotsTXT: true
+enableEmoji: true
+enableGitInfo: true
+
+module:
+  imports:
+    - path: github.com/luizdepra/hugo-coder
+
+pagination:
+  pagerSize: 10
+
+markup:
+  highlight:
+    noClasses: false
+    style: github-dark
+  goldmark:
+    renderer:
+      unsafe: true
+  tableOfContents:
+    startLevel: 2
+    endLevel: 6
+    ordered: false
+
+params:
+  author: CrazyMax
+  info: Open source, containers, and build systems
+  description: Personal website of CrazyMax, focused on open source, containers, and build systems.
+  avatarURL: images/avatar.png
+  favicon_32: favicon-32x32.png
+  favicon_16: favicon-16x16.png
+  touchicon: apple-touch-icon.png
+  manifest: site.webmanifest
+  since: 2007
+  dateFormat: January 2, 2006
+  colorScheme: auto
+  hideColorSchemeToggle: false
+  customSCSS:
+    - scss/typography.scss
+
+  plausibleAnalytics:
+    domain: crazymax.dev
+    serverURL: plausible.re4per.com
+    scriptURL: https://plausible.re4per.com/js/plausible.outbound-links.js
+
+  social:
+    - name: GitHub
+      icon: fa-brands fa-github fa-2x
+      weight: 1
+      url: https://github.com/crazy-max
+      rel: me
+    - name: X
+      icon: fa-brands fa-x-twitter fa-2x
+      weight: 2
+      url: https://twitter.com/crazyws
+      rel: me
+    - name: GitHub Sponsors
+      icon: fa-solid fa-heart fa-2x
+      weight: 3
+      url: https://github.com/sponsors/crazy-max
+    - name: PayPal
+      icon: fa-brands fa-paypal fa-2x
+      weight: 4
+      url: https://www.paypal.me/crazyws
+
+menu:
+  main:
+    - name: About
+      weight: 1
+      url: about/
+    - name: Projects
+      weight: 2
+      url: projects/
