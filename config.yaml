@@ -1,19 +1,22 @@
 baseURL: https://crazymax.dev/
 languageCode: en-us
+defaultContentLanguage: en
 title: CrazyMax
-canonifyurls: true
+canonifyURLs: true
 enableRobotsTXT: true
-disqusShortname: does-not-exist
 enableEmoji: true
 
 module:
   imports:
-    - path: github.com/hugo-toha/toha
+    - path: github.com/luizdepra/hugo-coder
 
-theme:
-  - toha
+pagination:
+  pagerSize: 10
 
 markup:
+  highlight:
+    noClasses: false
+    style: github-dark
   goldmark:
     renderer:
       unsafe: true
@@ -23,35 +26,48 @@ markup:
     ordered: false
 
 params:
-  gitRepo: https://github.com/crazy-max/crazy-max.github.io
-  copyright: CrazyMax © 2007-2025
+  author: CrazyMax
+  info: Open source, containers, and build systems
   description: Creating open source software.
-  background: images/background.jpg
+  keywords: blog,developer,personal,open source,go,docker,container
+  avatarURL: images/avatar.png
+  favicon_32: images/favicon.png
+  favicon_16: images/favicon.png
+  since: 2007
+  dateFormat: January 2, 2006
+  colorScheme: auto
+  hideColorSchemeToggle: false
 
-  logo:
-    favicon: /images/favicon.png
-
-  enableBlogPost: false
-  enableTOC: true
-
-  #  customMenus:
-  #    - name: Notes
-  #      url: https://hossainnotes.netlify.app/docs/example/
-
-  newsletter:
-    enable: false
-
-  author:
-    name: CrazyMax
-    nickname: CrazyMax
-    image: images/avatar.png
-    greeting: Hi, I'm
-    summary:
-      - "I'm a Software Engineer"
-      - "I'm interested in Go and Docker"
-      - "I enjoy working on OSS projects"
-
-  plausible:
-    enable: true
-    host: plausible.re4per.com
+  plausibleAnalytics:
     domain: crazymax.dev
+    serverURL: plausible.re4per.com
+    scriptURL: https://plausible.re4per.com/js/plausible.outbound-links.js
+
+  social:
+    - name: GitHub
+      icon: fa-brands fa-github fa-2x
+      weight: 1
+      url: https://github.com/crazy-max
+      rel: me
+    - name: X
+      icon: fa-brands fa-x-twitter fa-2x
+      weight: 2
+      url: https://twitter.com/crazyws
+      rel: me
+    - name: GitHub Sponsors
+      icon: fa-solid fa-heart fa-2x
+      weight: 3
+      url: https://github.com/sponsors/crazy-max
+    - name: PayPal
+      icon: fa-brands fa-paypal fa-2x
+      weight: 4
+      url: https://www.paypal.me/crazyws
+
+menu:
+  main:
+    - name: About
+      weight: 1
+      url: about/
+    - name: Projects
+      weight: 2
+      url: projects/
