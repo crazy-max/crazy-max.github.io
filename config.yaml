@@ -39,6 +39,8 @@ params:
   dateFormat: January 2, 2006
   colorScheme: auto
   hideColorSchemeToggle: false
+  customSCSS:
+    - scss/typography.scss
 
   plausibleAnalytics:
     domain: crazymax.dev
