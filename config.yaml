@@ -5,6 +5,7 @@ title: CrazyMax
 canonifyURLs: true
 enableRobotsTXT: true
 enableEmoji: true
+enableGitInfo: true
 
 module:
   imports:
