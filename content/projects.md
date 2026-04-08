@@ -1,5 +1,6 @@
 +++
 title = "Projects"
+description = "Curated projects maintained and contributed to by CrazyMax, spanning Docker, BuildKit, GitHub Actions, container images, and Go tooling."
 +++
 
 This is a curated view of the work I maintain and contribute to most often. The full list is larger, but these are the

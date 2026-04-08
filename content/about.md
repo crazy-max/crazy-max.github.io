@@ -1,5 +1,6 @@
 +++
 title = "About"
+description = "About CrazyMax, a software engineer at Docker and open source maintainer focused on containers, build systems, release tooling, and developer workflows."
 +++
 
 I'm a software engineer at Docker and an open source maintainer focused on Go, containers, build systems, release

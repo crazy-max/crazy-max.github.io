@@ -28,8 +28,7 @@ markup:
 params:
   author: CrazyMax
   info: Open source, containers, and build systems
-  description: Creating open source software.
-  keywords: blog,developer,personal,open source,go,docker,container
+  description: Personal website of CrazyMax, focused on open source, containers, and build systems.
   avatarURL: images/avatar.png
   favicon_32: favicon-32x32.png
   favicon_16: favicon-16x16.png
