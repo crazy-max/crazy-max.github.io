@@ -31,8 +31,10 @@ params:
   description: Creating open source software.
   keywords: blog,developer,personal,open source,go,docker,container
   avatarURL: images/avatar.png
-  favicon_32: images/favicon.png
-  favicon_16: images/favicon.png
+  favicon_32: favicon-32x32.png
+  favicon_16: favicon-16x16.png
+  touchicon: apple-touch-icon.png
+  manifest: site.webmanifest
   since: 2007
   dateFormat: January 2, 2006
   colorScheme: auto
