@@ -5,3 +5,7 @@
   -webkit-hyphens: manual;
   hyphens: manual;
 }
+
+.content article a.external-link:not(:has(img))::after {
+  content: none;
+}
