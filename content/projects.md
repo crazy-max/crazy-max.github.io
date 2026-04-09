@@ -67,11 +67,11 @@ projects people usually land on first.
 
 ## More projects
 
-- [Echo IPFilter](https://github.com/crazy-max/echo-ipfilter), IP filtering middleware for the Echo framework.
+- [echo-ipfilter](https://github.com/crazy-max/echo-ipfilter), IP filtering middleware for the Echo framework.
 - [gonfig](https://github.com/crazy-max/gonfig), lightweight config handling for Go.
 - [gotestlist](https://github.com/crazy-max/gotestlist), list tests in Go packages.
 - [gohealthchecks](https://github.com/crazy-max/gohealthchecks), Healthchecks API client for Go.
-- [goxx](https://github.com/crazy-max/goxx), Go CGO cross-compiler Docker image.
+- [goxx](https://github.com/crazy-max/goxx), Go CGO cross-compiler container image.
 - [xgo](https://github.com/crazy-max/xgo), CGO cross compiler.
 
 ## Archived projects
